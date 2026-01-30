@@ -1,0 +1,55 @@
+
+body {
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.hidden { 
+    display: none; 
+}
+
+#icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+#icon-container div {
+    width: 400px;
+}
+
+#left-cherry { 
+    transition: all 0.5s ease; 
+    /* ensures the transform origin is calculated relative to the element’s bounding box */
+    transform-box: fill-box;
+    /* tells it to rotate around its own center. */
+    transform-origin: center;
+}
+
+#cherries:hover #left-cherry { 
+    fill: red; 
+}
+
+#cherries:hover #left-cherry { 
+    transform: rotate(360deg); 
+}
+
+#leaf {
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  /* Trigger wiggle when hovering over either cherry */
+ #cherries:hover #leaf {
+    animation: wiggle 0.5s ease-in-out;
+  }
+
+  @keyframes wiggle {
+    0%  { transform: rotate(0deg); }
+    25% { transform: rotate(3deg); }
+    75% { transform: rotate(-3deg); }
+    100% { transform: rotate(0deg); }
+  }
