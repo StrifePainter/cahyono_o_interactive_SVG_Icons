@@ -1,10 +1,12 @@
 console.log("JavaScript file is connected!");
 
-const icon = document.querySelectorAll("svg");
-console.log(icon);
+const icons = document.querySelectorAll("svg");
 
-function logId(){
-    console.log(this.id);
+function logId(event) {
+
+    const elementId = event.currentTarget.id;
+
+    console.log(`Clicked on: ${elementId}`);
 }
 
-icon.forEach(icon => icon.addEventListener('click', logId));
+icons.forEach(item => item.addEventListener('click', logId));

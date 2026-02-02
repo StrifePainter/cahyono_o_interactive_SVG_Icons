@@ -28,14 +28,12 @@ h1 {
 .icon-container {
     display: flex;
     justify-content: center;
+    padding: 45px;
 }
 
 .icon-container div {
     width: 400px;
 }
-
-
- 
 
  #Present:hover {
     animation: wiggle 0.5s ease-in;
@@ -62,7 +60,34 @@ h1 {
     transform: translateY(-10px);
 }
 
+#Leaf {
+    transition: filter 0.3s ease;
+}
 
+#Leaf:hover {
+    filter: brightness(1.1) saturate(1.5);
+}
+
+#Egg:hover {
+    animation: woggle 0.3s ease-in-out;
+}
+
+@keyframes woggle {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  50% { transform: translateX(4px); }
+  75% { transform: translateX(-4px); }
+  100% { transform: translateX(0); }
+}
+
+#Kiwi {
+    transition: transform 0.3s ease-in;
+    cursor: pointer;
+}
+
+#Kiwi:hover {
+    transform: scale(1.2);
+}
 
 #footer {
     font-size: 42px;
