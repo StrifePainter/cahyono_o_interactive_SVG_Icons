@@ -18,9 +18,9 @@ body {
 
 h1 {
     font-family: 'fink', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 48px;
+    font-size: 56px;
     color: rgb(185, 136, 44);
-    margin: 25px;
+    margin: 60px;
     text-shadow: 0px 2px 0px rgb(122, 41, 16);
 }
 
@@ -35,23 +35,37 @@ h1 {
 }
 
 
-#bell:hover { 
-    transform: rotate(360deg); 
-}
+ 
 
-
-
-
-
-
-  /* Trigger wiggle when hovering over either cherry */
- #cherries:hover #leaf {
-    animation: wiggle 0.5s ease-in-out;
+ #Present:hover {
+    animation: wiggle 0.5s ease-in;
   }
 
   @keyframes wiggle {
     0%  { transform: rotate(0deg); }
-    25% { transform: rotate(3deg); }
-    75% { transform: rotate(-3deg); }
+    25% { transform: rotate(6deg); }
+    75% { transform: rotate(-1deg); }
     100% { transform: rotate(0deg); }
   }
+
+#Bell:hover {
+    animation: hover 0.45s ease-in-out infinite alternate;
+}
+
+@keyframes hover {
+    0%  {transform: translateY(0);}
+    100% {transform: translateY(-20px);}
+}
+
+#Banana:hover {
+    filter: drop-shadow(0px 10px 8px rgba(151, 86, 11, 0.726));
+    transform: translateY(-10px);
+}
+
+
+
+#footer {
+    font-size: 42px;
+    color: rgb(74, 38, 158);
+    padding: 50px;
+}
