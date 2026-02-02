@@ -1,15 +1,10 @@
-console.log("JS file is connected");
+console.log("JavaScript file is connected!");
 
-// Variables
-const cherry = document.querySelector("#cherries");
-console.log(cherry);
+const icon = document.querySelectorAll("svg");
+console.log(icon);
 
-// Functions
-
-function logId() {
-    console.log("User Clicked On:", this.id)
+function logId(){
+    console.log(this.id);
 }
 
-// EventListener
-
-cherry.addEventListener("click", logId);
+icon.forEach(icon => icon.addEventListener('click', logId));
