@@ -1,46 +1,48 @@
+@font-face {
+    font-family: 'fink';
+    src: url('../fonts/FinkHeavyRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 body {
+    font-family: 'fink', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 16px;
-    background-color: white;
+    background-color: #e1f3bf;
     color: black;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-.hidden { 
-    display: none; 
+h1 {
+    font-family: 'fink', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 48px;
+    color: rgb(185, 136, 44);
+    margin: 25px;
+    text-shadow: 0px 2px 0px rgb(122, 41, 16);
 }
 
-#icon-container {
+
+.icon-container {
     display: flex;
     justify-content: center;
 }
 
-#icon-container div {
+.icon-container div {
     width: 400px;
 }
 
-#left-cherry { 
-    transition: all 0.5s ease; 
-    /* ensures the transform origin is calculated relative to the element’s bounding box */
-    transform-box: fill-box;
-    /* tells it to rotate around its own center. */
-    transform-origin: center;
-}
 
-#cherries:hover #left-cherry { 
-    fill: red; 
-}
-
-#cherries:hover #left-cherry { 
+#bell:hover { 
     transform: rotate(360deg); 
 }
 
-#leaf {
-    transform-box: fill-box;
-    transform-origin: center;
-  }
+
+
+
+
 
   /* Trigger wiggle when hovering over either cherry */
  #cherries:hover #leaf {

@@ -1,29 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/grid.css" rel="stylesheet" type="text/css">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
-    <title>Assigment 1 - Interactive SVG Icons</title>
-    </head>
-
-<body>
-    <header>
-        <h1>SVG Icons Project</h1>
-    </header>
-        
-    <main class="grid-con center-grid-con">
-
-    <div class="icon-container col-span-2 m-col-start-1 m-col-end-4 l-col-start-1 l-col-end-5">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 263.59 273.78">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 263.59 273.78">
+  <defs>
     <clipPath id="clippath">
       <rect x="34.45" y="54.65" width="194.7" height="194.7" style="fill: none;"/>
     </clipPath>
     <clipPath id="clippath-1">
       <polygon points="147.47 43.14 116.12 43.14 100.44 63.66 116.12 97.45 147.47 97.45 163.15 63.66 160.37 60.01 147.47 43.14" style="fill: none;"/>
     </clipPath>
-    <g style="isolation: isolate;">
+  </defs>
+  <g style="isolation: isolate;">
     <g id="Present">
       <rect x="34.45" y="54.65" width="194.7" height="194.7" style="fill: #eff9fe; stroke: #eff9fe; stroke-miterlimit: 10;"/>
       <g style="clip-path: url(#clippath);">
@@ -51,19 +36,7 @@
         <polygon points="176.31 14.34 184.69 36.81 192.99 33.06 180.73 11.96 176.31 14.34" style="fill: #da9cc6;"/>
         <polygon points="70.99 33.06 79.12 36.81 87.33 14.34 82.99 11.96 70.99 33.06" style="fill: #da9cc6;"/>
         <polygon points="131.8 73.74 149.12 56.92 114.9 56.92 131.8 73.74" style="fill: #da9cc6;"/>
-        </g>
-        </g>
+      </g>
     </g>
-    </svg>
-    </div>
-            
-</main>
-    
-    <footer>
-        <p>&copy; Music Mixer 2026</p>
-    </footer>
-
-    <script src="js/main.js"></script>
-</body>
-</html>
-
+  </g>
+</svg>
